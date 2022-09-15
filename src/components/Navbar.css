@@ -1,0 +1,52 @@
+.navigation{
+    background: #fff;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+ 
+    padding: 1rem 4rem;
+    box-shadow:0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu ul li {
+    font-size: 24px;
+    margin: 2rem 2.5rem;
+    display: inline;
+    
+}
+.menu ul li a{
+    color: rgb(218, 213, 213);
+    text-decoration: none;
+    padding: 10px;  
+   
+    font-weight: bold;
+   
+}
+.menu ul li a:hover{
+    color:grey;
+}
+
+.search input{
+     width: 400px;
+     height: 40px;
+     background: rgb(241, 238, 238);
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     font-size: 16px;
+     padding: 10px;
+     border:gray ;
+     
+}

@@ -1,0 +1,12 @@
+.description{
+    top:140px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.video{
+    position: relative;
+}

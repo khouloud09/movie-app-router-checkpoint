@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
+import { Routes,Route } from 'react-router-dom';
 import './App.css';
-
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Description from './components/Description';
 function App() {
-  return (
+  const [searchTerm, setSearchTerm] = useState("")
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar setSearchTerm={setSearchTerm}/>
+      <Routes>
+        <Route path="/" element={<Home searchTerm={searchTerm}/>} />
+        <Route path="/description/:title" element={<Description/>} />
+      </Routes>
+      
     </div>
   );
 }

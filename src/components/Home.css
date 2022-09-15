@@ -1,0 +1,32 @@
+.Home{
+    
+    margin-top: 140px;
+    margin-left:160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.movie-container{
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+  .add-button button{
+    width: 600px;
+    height: 40px;
+    background: rgb(216, 212, 212);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border:gray ;
+    margin-bottom: 20px;
+}
